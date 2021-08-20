@@ -2,16 +2,19 @@ package grades;
 
 public class BestGradesPrinter {
 
-    BestGradeCalculator bestGradeCalculator = new BestGradeCalculator();
+    private BestGradeCalculator bestGradeCalculator;
 
-    public void printingBestBoyAndGirl(){
-        Boy boy;
-        boy = bestGradeCalculator.getBestGradeBoys();
-        System.out.println(boy.getName() + " " + boy.getGrade());
-
-        Girl girl;
-        girl = bestGradeCalculator.getBestGradeGirls();
-        System.out.println(girl.getName() + " " + girl.getGrade());
+    public BestGradesPrinter(){
+         bestGradeCalculator = new BestGradeCalculator();
     }
 
+    public void printingBoy(){
+        Boy boy = bestGradeCalculator.getBestGradeBoys();
+        System.out.println(boy.getName() + " " + boy.getGrade());
+    }
+
+    public void printingGirl(){
+        Girl girl = bestGradeCalculator.getBestGradeGirls();
+        System.out.println(girl.getName() + " " + girl.getGrade());
+    }
 }

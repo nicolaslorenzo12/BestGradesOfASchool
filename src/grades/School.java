@@ -4,6 +4,7 @@ public class School {
 
     public static void main(String[] args) {
         BestGradesPrinter bestGradesPrinter = new BestGradesPrinter();
-        bestGradesPrinter.printingBestBoyAndGirl();
+        bestGradesPrinter.printingBoy();
+        bestGradesPrinter.printingGirl();
     }
 }
