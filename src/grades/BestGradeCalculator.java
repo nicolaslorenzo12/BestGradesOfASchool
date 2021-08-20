@@ -8,7 +8,6 @@ public class BestGradeCalculator {
 
     public BestGradeCalculator(){
         boys = studentService.getBoys();
-
         girls = studentService.getGirls();
     }
 
