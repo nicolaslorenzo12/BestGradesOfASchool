@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class BestGradeCalculator {
     StudentService studentService = new StudentService();
-    ArrayList<Boy> boys = new ArrayList();
-    ArrayList<Girl> girls = new ArrayList();
+    private ArrayList<Boy> boys = new ArrayList();
+    private  ArrayList<Girl> girls = new ArrayList();
 
     public BestGradeCalculator(){
         boys = studentService.getBoys();

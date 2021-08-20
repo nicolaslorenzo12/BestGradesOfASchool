@@ -2,8 +2,8 @@ package grades;
 import java.util.ArrayList;
 
 public class StudentService {
-    ArrayList<Boy> boys = new ArrayList();
-    ArrayList<Girl> girls = new ArrayList();
+    private ArrayList<Boy> boys = new ArrayList();
+    private ArrayList<Girl> girls = new ArrayList();
 
     Boy antonio = new Boy("Antonio", 3, 4);
     Boy miguel = new Boy("Miguel", 10, 0);

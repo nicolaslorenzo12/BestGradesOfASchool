@@ -3,8 +3,8 @@ package grades;
 public class BestGradesPrinter {
 
     BestGradeCalculator bestGradeCalculator = new BestGradeCalculator();
-    Boy boy;
-    Girl girl;
+    private Boy boy;
+    private Girl girl;
 
     public BestGradesPrinter(){
         boy = bestGradeCalculator.getBestGradeBoys();
