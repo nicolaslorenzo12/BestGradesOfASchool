@@ -3,7 +3,7 @@ package grades;
 public class BestGradesPrinter {
 
     private BestGradeCalculator bestGradeCalculator;
-
+    
     public BestGradesPrinter(){
          bestGradeCalculator = new BestGradeCalculator();
     }
