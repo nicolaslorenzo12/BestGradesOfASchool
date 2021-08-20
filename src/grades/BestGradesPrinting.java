@@ -1,15 +1,14 @@
 package grades;
-import java.util.ArrayList;
 
-public class PrintingBestGrades {
+public class BestGradesPrinting {
 
-    GetBoyAndGirl gradesDirector = new GetBoyAndGirl();
+    GradeBestBoyAndGirl gradeBestBoyAndGirl = new GradeBestBoyAndGirl();
     Boy boy;
     Girl girl;
 
-    public PrintingBestGrades(){
-        boy = gradesDirector.getBestGradeBoys();
-        girl = gradesDirector.getBestGradeGirls();
+    public BestGradesPrinting(){
+        boy = gradeBestBoyAndGirl.getBestGradeBoys();
+        girl = gradeBestBoyAndGirl.getBestGradeGirls();
     }
 
     public void printingBoy(){

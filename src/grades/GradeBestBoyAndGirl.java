@@ -1,14 +1,15 @@
 package grades;
 import java.util.ArrayList;
 
-public class GetBoyAndGirl {
-    StudentService studentSecretary = new StudentService();
+public class GradeBestBoyAndGirl {
+    StudentService studentService = new StudentService();
     ArrayList<Boy> boys = new ArrayList();
     ArrayList<Girl> girls = new ArrayList();
 
-    public GetBoyAndGirl(){
-        boys = studentSecretary.getBoys();
-        girls = studentSecretary.getGirls();
+    public GradeBestBoyAndGirl(){
+        boys = studentService.getBoys();
+
+        girls = studentService.getGirls();
     }
 
     public Boy getBestGradeBoys(){
