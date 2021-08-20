@@ -1,12 +1,12 @@
 package grades;
 import java.util.ArrayList;
 
-public class GradeBestBoyAndGirl {
+public class BestGradeCalculator {
     StudentService studentService = new StudentService();
     ArrayList<Boy> boys = new ArrayList();
     ArrayList<Girl> girls = new ArrayList();
 
-    public GradeBestBoyAndGirl(){
+    public BestGradeCalculator(){
         boys = studentService.getBoys();
 
         girls = studentService.getGirls();

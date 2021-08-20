@@ -1,14 +1,14 @@
 package grades;
 
-public class BestGradesPrinting {
+public class BestGradesPrinter {
 
-    GradeBestBoyAndGirl gradeBestBoyAndGirl = new GradeBestBoyAndGirl();
+    BestGradeCalculator bestGradeCalculator = new BestGradeCalculator();
     Boy boy;
     Girl girl;
 
-    public BestGradesPrinting(){
-        boy = gradeBestBoyAndGirl.getBestGradeBoys();
-        girl = gradeBestBoyAndGirl.getBestGradeGirls();
+    public BestGradesPrinter(){
+        boy = bestGradeCalculator.getBestGradeBoys();
+        girl = bestGradeCalculator.getBestGradeGirls();
     }
 
     public void printingBoy(){
